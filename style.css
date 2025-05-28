@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+header .links nav a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 20px;
+    transition: 0.3s;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+header .links nav a:hover {
+    scale: 1.1;
+    background-color: blueviolet;
+}
+
+header .links nav {
+    display: flex;
+}
+
+header .buttons {
+    display: flex;
+    align-items: center;
+}
+
+header .buttons button {
+    border-radius: 7px;
+    border-color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+}
+
+main {
+    width: 100%;
+    background-image: url(https://wallpapersok.com/images/hd/dark-minimalist-abstract-art-i9ryhux3y6gpxkro.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.intro h1 {
+    margin: 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text {
+    background-color: black;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px red;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    margin: 100px;
+    font-size: 20px;
+}
+
+.text img{
+    width: 80%;
+}
+
+.image {
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;    
+    flex-direction: column;
+}
+
+.image img {
+    width: 100%;
+}
+
+.text button{
+    width: 200px;
+    height: 60px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.text button:hover{
+    width: 220px;
+    height: 80px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.butterfly {
+    display: flex;
+    background-color: black;
+    box-shadow: 0 0 30px red;
+    width: 20%;
+    color: white;
+    justify-content: center;
+    border-radius: 15px;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 20px;
+    margin: 50px;
+    transition: 0.3s;
+}
+
+.butterfly .photo {
+    display: flex;
+    align-items: center;
+}
+
+.butterfly button {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border: none;
+    background-color: brown;
+    font-size: 25px;
+    color: white;
+    transition: 0.3s;
+    border-radius: 7px;
+}
+
+.butterfly button:hover {
+    background-color: blueviolet;
+    scale: 1.1;
+}
+
+.photo img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.butterfly:hover {
+    background-color: brown;
+    scale: 1.1;
+}
+
+.photo .maks {
+    width: 70%;
+    animation: rainbow 1s infinite linear;
+}
+
+@keyframes rainbow {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(90deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.choice {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+
+.warning {
+        width: 100%;
+        height: 100%;
+        background: black;
+        color: white;
+        animation: fadeOut 5s forwards; /* Анимация длится 2 секунды */
+    }
+    
+    @keyframes fadeOut {
+        0%{
+             opacity: 0
+         } 
+        25% { opacity: 1; }
+        50% {
+            opacity: 1;
+        }   
+        75% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+
+/* Сброс отступов и базовые стили */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Дисклеймер (на весь экран) */
+.disclaimer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeOut 10s forwards; /* Анимация исчезновения через 5 секунд */
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.disclaimer-content {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.disclaimer h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.disclaimer p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.countdown {
+    display: inline-block;
+    font-weight: bold;
+    animation: countdown 5s linear forwards;
+}
+
+/* Анимация исчезновения */
+@keyframes fadeOut {
+    0%, 80% { opacity: 1; } /* Первые 80% времени (4 сек) видим */
+    100% { opacity: 0; visibility: hidden; } /* Затем исчезает */
+}
+
+/* Анимация обратного отсчёта */
+@keyframes countdown {
+    0% { content: "5"; }
+    20% { content: "4"; }
+    40% { content: "3"; }
+    60% { content: "2"; }
+    80% { content: "1"; }
+    100% { content: "0"; }
+}
+
+/* Основной контент (изначально скрыт) */
+.hidden-content {
+    opacity: 0;
+    animation: showContent 0.1s 5s forwards; /* Появится после 5 секунд */
+}
+
+/* Анимация появления контента */
+@keyframes showContent {
+    to { opacity: 1; }
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 20px;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .intro {
+        flex-direction: column;
+    }
+    .text {
+        width: 600px;
+    }
+    .butterfly {
+        width: 300px;
+    }
+}
+
+@media (max-width: 830px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+    }
+    .logo h1 {
+        font-size: 20px;
+    }
+    header .links nav a{
+        font-size: 20px;
+        padding: 0;
+    }
+    .butterfly {
+        width: 70%;
+    }
+    .text {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    header .links nav {
+        flex-direction: column;
+    }
+
+    header .links nav a{
+        margin: 0;
+    }
+
+    header .buttons {
+        flex-direction: column;
+        width: 200px;
+    }
+    .text {
+        width: 400px;
+    }
+    header .logo {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 470px) {
+    .text {
+        width: 300px;
+    }
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+    header .logo h1 {
+        font-size: 15px;
+    }
+    header .links nav a {
+        font-size: 15px;
+    }
+    header .buttons button{
+        font-size: 15px;
+    }
+}
